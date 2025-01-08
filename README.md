@@ -54,8 +54,8 @@ Follow these steps to set up and run the application:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/jbankz/tez-app.git
-cd tez-app
+git clone <https://github.com/jbankz/tez-app.git>
+cd <tez-app>
 ```
 
 ### 2. Install Dependencies
