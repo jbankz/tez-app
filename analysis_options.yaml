@@ -1,0 +1,53 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    [
+      build/**,
+      lib/**.freezed.dart,
+      lib/**.g.dart,
+      lib/**.form.dart,
+      lib/**.generated.dart,
+      lib/**.gr.dart,
+      lib/**.locator.dart,
+      lib/**.logger.dart,
+      lib/**.router.dart,
+      lib/**.mocks.dart,
+    ]
+  errors:
+    invalid_annotation_target: ignore
+    use_key_in_widget_constructors: ignore
+
+linter:
+  rules:
+rules:
+  - avoid_private_typedef_functions # Avoid defining typedef functions that are private.
+  - avoid_redundant_argument_values # Avoid passing redundant arguments to functions or constructors.
+  - avoid_unused_constructor_parameters # Ensure that constructor parameters are used within the constructor.
+  - avoid_void_async # Avoid using `async` with functions that have a return type of `void`.
+  - cancel_subscriptions # Ensure that subscriptions (e.g., streams) are properly canceled to avoid memory leaks.
+  - cascade_invocations # Prefer using method cascades to avoid chaining method calls.
+  - invalid_case_patterns # Ensure that switch case patterns are valid and cover all cases.
+  - join_return_with_assignment # Combine return statements with variable assignments where appropriate.
+  - literal_only_boolean_expressions # Use boolean literals directly instead of expressions that evaluate to boolean literals.
+  - missing_whitespace_between_adjacent_strings # Ensure proper whitespace between adjacent string literals.
+  - no_runtimeType_toString # Avoid using `runtimeType.toString()` as it may be unnecessary.
+  - package_api_docs # Ensure that public APIs are properly documented with comments.
+  - prefer_const_declarations # Prefer using `const` for immutable variables where possible.
+  - prefer_expression_function_bodies # Prefer concise expression-bodied functions where possible.
+  - prefer_final_locals # Use `final` for local variables that are not reassigned.
+  - sort_child_properties_last # Sort child properties in widgets so that `child` or `children` properties appear last.
+  - unnecessary_breaks # Remove unnecessary `break` statements in `switch` cases.
+  - unsafe_html # Avoid using potentially unsafe HTML content to prevent security issues.
+  - use_full_hex_values_for_flutter_colors # Prefer using full hex color values for better readability and consistency.
+  - use_string_buffers # Use `StringBuffer` for efficient string concatenation.
+  - use_build_context_synchronously # Avoid calling `BuildContext` methods synchronously during builds.
+  - avoid_empty_else # Remove empty `else` blocks to improve code readability.
+  - avoid_bool_literals_in_conditional_expressions # Avoid using boolean literals directly in conditional expressions.
+  - avoid_catching_errors # Avoid catching errors that are not handled or rethrown.
+  - avoid_print # Avoid using `print` statements in production code.
+  - avoid_returning_null # Avoid returning `null` from functions that should not return `null`.
+  - avoid_returning_null_for_future # Avoid returning `null` from futures that should not return `null`.
+  - avoid_returning_null_for_void # Avoid returning `null` from functions that should not return `null`.
+  - avoid_returning_null_for_void_futures # Avoid returning `null` from futures that should not return `null`.
+  - prefer_interpolation_to_compose_strings # Prefer using string interpolation to compose strings.
