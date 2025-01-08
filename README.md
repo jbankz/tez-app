@@ -1,12 +1,9 @@
-
 ---
-
 # Tez App
 
 This Flutter application was developed as part of a technical interview process. The app allows users to log in with a dummy credential, interact with a product list (favorite/unfavorite and view details), and retrieves basic device information from iOS using a native method channel.
 
 The app was built following **Clean Architecture** design principles and utilizes **Riverpod** for state management to ensure scalability and maintainability.
-
 ---
 
 ## Features
@@ -57,8 +54,8 @@ Follow these steps to set up and run the application:
 ### 1. Clone the Repository
 
 ```bash
-git clone <https://github.com/jbankz/tez-app.git>
-cd <tez-app>
+git clone https://github.com/jbankz/tez-app.git
+cd tez-app
 ```
 
 ### 2. Install Dependencies
